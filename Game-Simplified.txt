@@ -1,0 +1,454 @@
+Assassination Game
+
+###############################################################################
+
+Game Pieces:
+									Makeshift version:
+	1 president piece					Chess King
+	1 president die						Standard Die
+
+	5 player pieces:					Marked Chess Pawns or highlighter caps.
+ 	5 marked decks that include:		Standard deck (x 2) (10 total) (Blue): each marked with different highlighters
+ 		Movement cards						3-10 (34 x 2):
+ 			Up									Spades (7 x 2):	  up
+ 			Down								Clubs (7 x 2):	  right
+ 			Left								Hearts (7 x 2):	  down
+ 			Right								Diamonds (7 x 2): left
+ 											2 (4 x 2):
+ 												2 of any suit:	  do not move
+
+		Event cards:						Face Cards (16 x 2) :
+			2 Types:
+				Does Nothing					Jack-King (12 x 2): Do nothing
+				Action/Reveal identity			Ace (4 x 2): 		Action
+	
+	4 player identity cards				Unmarked deck (Red)
+											Ace of Hearts: 	 Secret Service Officer
+											King of Hearts:  Police Officer
+											Jack of Spades:  Sniper
+											Queen of Spades: Bomber
+
+	3 Injury tokens						Pennies (3)
+	1 Incident Token					Quarter:
+											face up: 	president safe
+											face down: 	incident occurred
+
+	1 Secret Service Token				Dime
+	1 Bad Cop Token						Nickel
+
+###############################################################################
+
+Characters:
+
+	Players:
+		Assassins:
+
+			Sniper:
+				Actions: (creates incident)
+					Snipe from tower to podium:
+						Must be alone in tower while president is on podium.
+							Pros: Extremely likely that you will kill the president.
+							Cons: It is difficult to escape from the tower.
+
+					Shoot Pistol:
+						You may shoot the President if they are in the same room.
+							Caution: if you shoot someone in a crowded room, you will likely be detained.
+
+						You may shoot another player if they are alone with you in a room.
+						
+						If the you have already revealed revealed, you may shoot at another player in a crowded room.
+
+			Bomber:
+				Actions:
+					Detonate: (once per game)
+						Bomber must go into a room at some point to detonate that room (assume the bomber had planted the bomb there).
+							(review bomber's movement card order if necessary)
+						Bomber must be adjacent to room intended for detonation
+						
+						Caution: if you are not alone when detonation occurs, you may be detained.
+
+						Note: holding cell room may not be detonated
+						Note: bomber MAY detonate another room from inside holding cell
+
+						If bomber reveals, but these rules are not fulfilled, detonation fails.
+
+		Law Enforcement:
+
+			Secret Service Agent:
+				Note: if incident occurs, secret service must reveal.
+
+				Actions:
+					Detain individual:
+						Secret service may detain an individual and move that character to the holding cell.
+							Caution: if you detain the reporter or police officer you will probably lose points.
+
+				Special Movement:
+					If secret service is revealed, secret service moves president
+
+			Undercover Police Officer
+				Actions:
+					Detain individual:
+						Police Officer may detain an individual and move that character to the holding cell (except secret service).
+							Caution: if you detain the reporter you will lose points
+									 if you attempt to detain the secret service agent, you will be detained
+
+					After incident occurs:
+						Shoot first (and ask questions later)
+							You may shoot another player
+								Caution: If you shoot the reporter you will lose points.
+
+				Special ability:
+					Bad Cop:
+						If the police officer is dealt to a player who is alone in last place (no ties for last):
+							player may choose to be the "bad cop" and work with assassins
+							If bad cop:
+								you may shoot at president
+								you may shoot at secret service agent
+								Caution: if you shoot at the president or secret service agent, you may be detained by the reporter.
+
+	############################
+
+	Non-Playing Characters:
+
+		President:
+			Movement:
+				Without incident:
+					president moves toward podium via dice roll, then photo op
+				With incident:
+					Secret service attempts to move president to helipad or bunker:
+						if in bunker:
+							president is safe
+						if on helipad:
+							if action cards do not kill or injure president:
+								president is safe
+
+		Reporter:
+			Moves randomly to hide the other players identities.
+
+###############################################################################
+
+Setup:
+
+	Step 1: Set coins
+		Set incident token face up.
+		If single player in the lead, that player takes secret service token.
+		If single player in last place, that player takes bad cop token.
+
+	Step 2: deal decks
+		Stage 1: decks separated into 3 stacks: movement, does nothing, and action cards.
+		Stage 2: players each draw a random deck of movement, does nothing, and action cards.
+			a way to do this is to put decks in random deck boxes, then "shuffle" the boxes up, or put the boxes in a hat and have players reach in for each.
+			then: players casually shuffle action and do nothing cards together (order not particularly important).
+ 		Stage 3: last deck's action cards are discarded and two decks set aside for reporter player.
+
+	Step 3: deal player cards
+		if there is no points leader:
+			player cards are shuffled and randomly distributed
+		if there is one points leader:
+			points leader is given the secret service card
+			the rest of the identity cards are shuffled and dealt
+
+	Step 4: board setup
+		players:
+			all players are put in the courtyard
+		president:
+			roll die to find start position:
+				even: helipad
+				odd: bunker
+
+###############################################################################
+
+Turn system:
+
+	Stage 1: Player Movement
+		Step 1:
+			players each add a movement card into pile
+		Step 2:
+			reporter movement card is added to pile
+		Step 3:
+			cards shuffled, then laid face up
+		Step 4:
+			Game pieces are moved:
+				if pieces can be moved in the direction played:
+					the piece is moved in that direction.
+				if piece cannot be moved in the direction played:
+					the piece is moved in the opposite direction.
+		Step 5:
+			cards stacked on to movement discard pile (keep order to check bomber movement)
+
+	Stage 2: President Movement
+		Before speech:
+			If no incident:
+				roll die to find president's route to podium:
+					if low (1-2):
+						if president can move down:
+							president moves down
+						if president cannot move down:
+							if president can move left:
+								president moves left
+							if president cannot move left:
+								president moves to podium
+					if middle (3-4):
+						if president can move left:
+							president moves left
+						if president cannot move left:
+							president moves to podium
+					if high (5-6):
+						if president can move up:
+							president moves up
+						if president cannot move up:
+							if president can move left:
+								president moves left
+							if president cannot move left:
+								president moves to podium
+
+			If incident has occurred:
+				secret service agent moves president piece
+		
+		After speech:
+			If not incident (president moves to photo op):
+				president moves in the following order, per turn:
+					Podium -> Courtyard
+					Courtyard -> Hall
+					Hall -> Public Exit
+			If incident (president attempt to escape to helipad or bunker):
+				secret service moves president
+
+	Stage 3: Action cards
+		Step 1:
+			All players put an action card into the pile
+		Step 2:
+			Reporter card is added to card pile
+		Step 3:
+			Cards are shuffled and turned over
+			If cards are "do nothing":
+				ignore
+		Step 4: Resolve "action / reveal" cards
+			If cards are "action / reveal":
+				players that played action cards reveal themeselves
+
+				actions may occure in specific order:
+					if bomber has revealed, detonation happens first
+
+					if police officer is playing "shoot first (and ask question later)", this precedes other actions:
+
+					otherwise order is irrelevant
+		Step 5:
+			injured players are moved to the hospital
+			detained players are moved to the holding cell
+
+
+###############################################################################
+
+Resolving Actions:
+	
+	If any actions occur, follow appropriate procedure.
+
+		Sniper actions:
+			Snipe from tower to podium:
+				If sniper is alone in tower, and president is on podium:
+					roll dice:
+						if 3-6:
+							President killed
+						if 2:
+							President injured
+						if 1:
+							Miss
+
+			Sniper shoots pistol: (complex, but there are many corner cases)
+				The sniper may only reveal by firing pistol if:
+					president is in room
+					sniper is in room with exactly one other player
+
+				If the sniper has already revealed he may shoot
+
+				If in room with president:
+					If sniper has not revealed, sniper must shoot at the president.
+
+					all characters in room are revealed
+
+					If president is alone:
+						president killed
+
+					If president with secret service:
+						secret service man killed (must reveal)
+						president unharmed
+
+					If president with secret service and police officer:
+
+						if police officer alone in last place:
+							police officer must choose to be good or evil
+
+						if police officer good:
+							secret service man killed
+							sniper is detained
+							if bomber in room:
+								bomber is detained
+
+						if police officer is evil:
+							secret service man killed
+
+							police officer can ignore detaining sniper
+
+							if reporter in room:
+								reporter is revealed
+
+								sniper is detained
+								
+								if bomber is in room:
+									bomber is detained
+
+				If alone in room with another player or sniper has already revealed:
+					shoot other player:
+						if other player is secret service or police officer:
+							other player injured
+						if other player is reporter or bomber:
+							other player killed
+
+		Bomber Action:
+			Detonation:
+				if detonation fails: (requirements aren't fulfilled)
+					Nothing happens
+
+				if detonation is successful: (creates incident)
+					all players in room detonated are revealed
+					if president is in room:
+						if enclosed room (not courtyard or helipad):
+							if president is not injured:
+								roll dice:
+									if 3-6:
+										president is killed
+									if 1-2:
+										president is injured
+							if president is injured:
+								president is killed
+						if courtyard or helipad:
+							if president is not injured:
+								roll dice:
+									if 3-6:
+										president is injured
+									if 1-2:
+										president is unharmed
+							if president is injured:
+								president is killed
+
+					if secret service is in room:
+						secret service is injured
+
+					if police officer in room:
+						police officer is killed
+
+					if sniper in room:
+						sniper is killed
+
+					if reporter is in room:
+						reporter is killed
+
+				If bomber is not alone:
+					if secret service or police office in room with bomber:
+						they may reveal and detain bomber
+
+		Secret Service Action:
+			Detain individual:
+				Player is moved to holding cell:
+					if detained player is police officer:
+						police officer MAY reveal and move out of cell, but remains in holding cell room.
+
+		Police Officer Actions:
+			Detain individual:
+				Player is moved to holding cell:
+					if detained player is secret service:
+						secret service must reveal, but does not move to holding cell room.
+						police officer, instead, is detained and moved to holding cell room, but not in cell.
+
+			If incident has occurred:
+				Shoot first (and ask questions later):
+					Note: this action always resolves first in a shoot out.
+
+					Player may shoot another player:
+						shot player is revealed
+						if the shot player is not secret service:
+							shot player is killed
+						if shot player is secret service:
+							if secret service is not injured:
+								secret service is injured
+							if secret service is injured:
+								secret service is killed
+
+			Special actions available to "bad cop" only:
+				Bad Cop Actions:
+					Shoot president:
+						If in room with president:
+							all characters in room are revealed
+
+							If president is alone:
+								president killed
+
+							If president with secret service:
+								secret service killed (must reveal)
+								president unharmed
+
+							if reporter in room:
+								reporter is revealed
+								
+								bad cop is detained
+
+								if sniper in room:
+									sniper is detained
+								if bomber is in room:
+									bomber is detained
+									
+					Shoot secret service agent:
+						if secret service is not injured:
+							secret service is injured
+						if secret service is injured:
+							secret service is killed
+
+
+###############################################################################
+
+Scoring:
+
+	president gets to photo op:
+		if reporter detained:
+			+0 to each good guy
+		if reporter not detained, total success:
+			+7 to each good guy
+	president unharmed:
+	 	+5 to each good guy
+	president wounded:
+		+1 each bad guy
+	president killed:
+		+3 to each bad guy
+
+	good guy killed:
+		if by bad guy:
+			+1 to killer
+	
+	bad guy detained:
+		+1 to each good guy
+
+	bad guy killed:
+		if by good guy:
+			+1 to killer
+		if by bad guy:
+			-1 to killer
+
+	if reporter detained:
+		-4 to arrester
+
+	if police officer detained:
+		if by secret service:
+			-2 to secret service
+		if by result of attempting to detain secret service:
+			-2 to police officer
+
+	if bad guys escape:
+		+2 to escapee
+
+###############################################################################
+
+Winning:
+	first player to 15 points???			
+
+
