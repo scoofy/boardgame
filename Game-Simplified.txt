@@ -67,7 +67,7 @@ Characters:
 						
 						Caution: if you are not alone when detonation occurs, you may be detained.
 
-						Note: holding cell room may not be detonated
+						Note: security office may not be detonated
 						Note: bomber MAY detonate another room from inside holding cell
 
 						If bomber reveals, but these rules are not fulfilled, detonation fails.
@@ -234,7 +234,7 @@ Turn system:
 
 					otherwise order is irrelevant
 		Step 5:
-			injured players are moved to the hospital
+			injured players are moved to the health services
 			detained players are moved to the holding cell
 
 
@@ -352,14 +352,14 @@ Resolving Actions:
 			Detain individual:
 				Player is moved to holding cell:
 					if detained player is police officer:
-						police officer MAY reveal and move out of cell, but remains in holding cell room.
+						police officer MAY reveal and move out of cell, but remains in security office.
 
 		Police Officer Actions:
 			Detain individual:
 				Player is moved to holding cell:
 					if detained player is secret service:
-						secret service must reveal, but does not move to holding cell room.
-						police officer, instead, is detained and moved to holding cell room, but not in cell.
+						secret service must reveal, but does not move to the security office.
+						police officer, instead, is moved to the security office, but not in the holding cell.
 
 			If incident has occurred:
 				Shoot first (and ask questions later):
