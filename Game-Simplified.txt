@@ -5,19 +5,21 @@ Assassination Game
 Game Pieces:
 									Makeshift version:
 	1 president piece					Chess King
+
 	1 president die						Standard Die
 
 	5 player pieces:					Marked Chess Pawns or highlighter caps.
- 	5 marked decks that include:		Standard deck (x 2) (10 total) (Blue): each marked with different highlighters
- 		Movement cards						3-10 (34 x 2):
- 			Up									Spades (7 x 2):	  up
- 			Down								Clubs (7 x 2):	  right
- 			Left								Hearts (7 x 2):	  down
- 			Right								Diamonds (7 x 2): left
- 											2 (4 x 2):
- 												2 of any suit:	  do not move
 
-		Event cards:						Face Cards (16 x 2) :
+	5 marked decks that include:		Standard deck (x 2) (10 total): each marked with different highlighters
+		Movement cards						2-K (48) (Blue):
+			Up									Spades (12):	up		(points up)
+			Down								Clubs (12):		right	(hold club in right hand, typically)
+			Left								Hearts (12):	down	(points down)
+			Right								Diamonds (12):	left	(engagement ring)
+											Aces and Jokers (6):
+												Any Suit:		do not move
+
+		Event cards:						Face Cards (16 x 2) (Red):
 			2 Types:
 				Does Nothing					Jack-King (12 x 2): Do nothing
 				Action/Reveal identity			Ace (4 x 2): 		Action
